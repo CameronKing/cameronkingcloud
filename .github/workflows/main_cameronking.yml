@@ -30,5 +30,4 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'cameronking'
-        slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_d377c6827c8744fab4d08fe589eb40a0 }}
