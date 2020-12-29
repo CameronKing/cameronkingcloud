@@ -15,15 +15,6 @@ a.fa:any-link{
   text-decoration: none;
 }
 
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  font-family: var(--font);
-  color: rgb(7, 78, 119);
-  text-shadow: none; /* Prevent inheritance from `body` */
-}
-
 /*
  * Base structure
  */
