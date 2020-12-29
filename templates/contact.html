@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+{% block title %} {{super() }} - About Me {% endblock %}
+  {% block header %}
+    <header class="mb-auto">
+      <div>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link" href="{{ url_for('home') }}"> Cameron King </a>
+        <a class="nav-link" href="{{ url_for('about') }}">About</a>
+        <a class="nav-link active" href="{{ url_for('contact') }}">Contact</a>
+      </nav>
+      </div>
+    </header>
+  {% endblock %}
+{% block content %}
+  <main class="px-3">
+    <h1>Contact</h1>
+    <p>Should you want to find out more, please consult one of the methods below.</p>
+
+    <table class="table table-bordered text-white">
+      <thead>
+        <th class="text-center" colspan=2 scope="col">Email</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Personal email (Preferred)</td>
+          <td><a href="mailto:c@cameronking.cloud">c@cameronking.cloud</a></td>
+        </tr>
+        <tr>
+          <td>Personal Gmail</td>
+          <td><a href="mailto:cameron.eric.king@gmail.com">cameron.eric.king@gmail.com</a></td>
+        </tr>
+        <tr>
+          <td>Work email</td>
+          <td><a href="mailto:cameron.king@igimail.com">cameron.king@igimail.com</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table table-bordered text-white">
+      <thead>
+        <th class="text-center" colspan=2 scope="col">Assorted works</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Github</td>
+          <td><a href="https://github.com/CameronKing">CameronKing/a></td>
+        </tr>
+        <tr>
+          <td>Google Scholar</td>
+          <td><a href="https://scholar.google.com/citations?user=7PVm7GEAAAAJ&hl">Public profile</a></td>
+        </tr>
+        <tr>
+          <td>ORCID</td>
+          <td><a href="https://orcid.org/0000-0002-5640-7390">0000-0002-5640-7390</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+{% endblock %}

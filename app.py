@@ -33,6 +33,16 @@ def about():
         justification="left",
     )
 
+@app.route("/contact")
+def contact():
+    subpath = request.path
+    fullpath = f"{get_custom_url()}{subpath}"
+    return render_template(
+        "contact.html",
+        url=fullpath,
+        justification="left",
+    )
+
 @app.errorhandler(404)
 def error(e):
     fullpath = f"{get_custom_url()}/404"
